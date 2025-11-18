@@ -1,6 +1,6 @@
 /* GLOBAL RESET AND FONT */
 :root {
-    --primary-color: #007BFF; /* A nice blue for accents */
+    --primary-color: rgb(152, 104, 112); /* A nice blue for accents */
     --secondary-color: #333;
     --background-light: #F4F4F9;
     --text-dark: #1F2937;
@@ -14,11 +14,16 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Georgia", serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--background-light);
+    background-image: url("assets/images/ph2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 /* 1. NAVIGATION BAR STYLING */
 .navbar {
@@ -26,7 +31,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: var(--shadow-light);
     position: sticky;
     top: 0;
@@ -35,7 +40,7 @@ body {
 
 .logo a {
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--primary-color);
     text-decoration: none;
 }
@@ -81,7 +86,7 @@ h1, h2 {
 }
 
 .primary-btn:hover {
-    background-color: #0056b3; /* Darker blue */
+    background-color: rgb(52, 24, 24); /* Darker blue */
     transform: translateY(-2px);
 }
 
@@ -113,10 +118,10 @@ h1, h2 {
 
 .hero-image {
     /* CONSOLIDATED AND CORRECTED CONTAINER SIZE */
-    width: 225px; /* Set a reasonable size for the circular container */
-    height: 225px;
+    width: 250px; /* Set a reasonable size for the circular container */
+    height: 250px;
     background-color: #ccc; /* Optional: background for when image loads slowly */
-    border-radius: 50%; /* Keeps the container round */
+    border-radius: 30%; /* Keeps the container round */
     overflow: hidden; /* Ensures the image doesn't spill outside the circle */
 }
 
